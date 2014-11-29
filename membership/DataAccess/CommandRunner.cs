@@ -33,7 +33,7 @@ namespace Membership.DataAccess
     /// </summary>
     public dynamic ExecuteSingleDynamic(string sql, params object[] args)
     {
-      return this.ExecuteDynamic(sql, args).First();
+      return this.ExecuteDynamic(sql, args).FirstOrDefault();
     }
 
     /// Executes a typed query
